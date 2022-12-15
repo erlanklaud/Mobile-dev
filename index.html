@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body-one">
+    <div class="wrapper">
+        <nav>
+          <table class="top_navbartab">
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <tr>
+
+               
+                  
+                <td><a href="#"><input type="text" placeholder="Search" style="width: 350px;height: 25px;margin: 0px 0px;"></td>
+		
+                  <td><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" style="width:20px;margin: 0 0px;"></a></td>
+               
+            </tr>
+        </table>
+            <!--<div class="logo">
+                <img src="logo.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" style="width:30px;margin: 0 200px;"></a></li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" style="width:30px;margin: 0 -250px;"></a></li>
+                <li><a href="#"><input type="number" placeholder="  Filter" style="width:80px;height: 50px;margin: -10px -300px;"></a></li>
+                <li><a href="#"><input type="text" placeholder="    Search" style="width: 300px;height: 50px;margin: -10px -300px;"></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>-->
+        </nav>
+  <main class="main-one">
+
+  <!-- Photo 1 -->
+  <section class="section-one">
+    <figure class="figure-one">
+      <img  class="img-one" src="https://cdn.shopify.com/s/files/1/0271/4088/2550/products/MY22Revolt2_ColorBSapphire_580x.jpg?v=1658039847">
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+      <h6 class="h4-one">Item Name:</h6> <h5 class="highlight">Giant Revolt</h5>
+      <div class="space-one"></div>
+      <div class="space-one"></div>
+      <h6 class="h4-one">Price:</h6> <h5 class="highlight-1">₱54,000</h5>
+      <div class="space-one"></div>
+     
+      <div class="space-one"></div>
+      <h6 class="h4-one">Ratings:  <img class="star-one" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"><img class="star-one" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">  <img class="star-one" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">  <img class="star-one" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">  <img class="star-one" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"></h6>
+      <br>
+      <center><button class="download">Buy now</button></center>
+    </div>
+    <br>
+  </section>
+  
+  <!-- Photo 2 -->
+  <section class="section-one">
+    <figure class="figure-one">
+     
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+      
+      <br>
+     
+    </div>
+    <br>
+  </section>
+  
+  <!-- Photo 3 -->
+  <section class="section-one">
+    <figure class="figure-one">
+     
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+     
+      <br>
+     
+    </div>
+    <br>
+  </section>
+  
+  <!-- Photo 4 -->
+  <section class="section-one">
+    <figure class="figure-one">
+   
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+    
+      <br>
+     
+    </div>
+    <br>
+  </section>
+  
+  <!-- Photo 5 -->
+  <section class="section-one">
+    <figure class="figure-one">
+     
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+     
+      <br>
+     
+    </div>
+    <br>
+  </section>
+  
+  <!-- Photo 6 -->
+  <section class="section-one">
+    <figure class="figure-one">
+     
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+     
+      <br>
+     
+    </div>
+    <br>
+  </section>
+
+  <!-- Photo 7 -->
+  <section class="section-one">
+    <figure class="figure-one">
+      
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+      
+      <br>
+     
+    </div>
+    <br>
+  </section>
+
+  <!-- Photo 8 -->
+  <section class="section-one">
+    <figure class="figure-one">
+      
+    </figure>
+    <div style="margin: 0 10%;">
+      <br><br><br>
+      
+      <br>
+    
+    </div>
+    <br>
+  </section>
+</main>
+</div>
+<script>
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navlinks = document.querySelectorAll('.nav-links li')
+
+    burger.addEventListener('click', () => {
+        //toggle nav
+        nav.classList.toggle('nav-active');
+
+        //animate links
+        navlinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            }
+            else {
+                link.style.animation = `navlinkfade 0.4s ease forwards ${index / 7 + 0.4}s`
+            }
+        })
+        //animate burger
+        burger.classList.toggle('burgeranimation');
+    })
+}
+
+navSlide();
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="main.js"></script>
+
+  </body>
+</html>
